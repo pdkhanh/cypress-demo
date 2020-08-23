@@ -1,5 +1,3 @@
-
-import 'cypress-wait-until'
 import { GobearPage } from '../../page-objects/todo-page'
 
 Cypress.on('uncaught:exception', (err, runnable) => {
