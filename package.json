@@ -4,7 +4,7 @@
   "description": "first cypress application",
   "main": "index.js",
   "scripts": {
-    "clean-reports":"rm -rf cypress/reports",
+    "clean-reports": "rm -rf cypress/reports",
     "test": "npx cypress run",
     "merge-report": "npx mochawesome-merge --reportDir cypress/reports/separate-reports > cypress/reports/full_report.json",
     "generate-report": "npx mochawesome-report-generator --reportDir cypress/reports cypress/reports/full_report.json",
@@ -15,13 +15,12 @@
   "license": "ISC",
   "devDependencies": {
     "cypress": "^5.0.0",
-    "mocha": "5.2.0",
-    "mochawesome": "4.1.0",
-    "mochawesome-merge": "2.0.1",
-    "mochawesome-report-generator": "4.0.1"
+    "mocha": "5.2.0"
   },
   "workspaces": {
-    "packages": ["packages/*"],
+    "packages": [
+      "packages/*"
+    ],
     "nohoist": [
       "**/mochawesome",
       "**/mochawesome/**",
