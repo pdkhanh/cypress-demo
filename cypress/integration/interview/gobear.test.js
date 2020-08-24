@@ -14,12 +14,11 @@ describe('Travel Insurance Test', function () {
             this.data = data;
         })
     })
-    var that = this;
-    it('See over 3 travel insurance cards on result page', ()=> {
+    it('See over 3 travel insurance cards on result page', function() {
         gobearPage.navigate()
         gobearPage.selectSGCountry()
         gobearPage.clickShowMyResult()
-        gobearPage.checkOnRadio(that.data.tripType)
+        gobearPage.checkOnRadio(this.data.tripType)
         gobearPage.ensureNumberOfCardAbove(3)
     })
 })
