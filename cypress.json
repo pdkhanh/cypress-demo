@@ -1,11 +1,4 @@
 {
     "defaultCommandTimeout": 10000,
-    "browser": "chrome",
-    "reporter": "./node_modules/mochawesome/src/mochawesome.js",
-    "reporterOptions": {
-      "reportDir": "cypress/reports/separate-reports",
-      "overwrite": false,
-      "html": true,
-      "json": true
-    }
+    "browser": "chrome"
 }
