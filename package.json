@@ -19,18 +19,5 @@
     "mochawesome": "4.1.0",
     "mochawesome-merge": "2.0.1",
     "mochawesome-report-generator": "4.0.2"
-  },
-  "workspaces": {
-    "packages": [
-      "packages/*"
-    ],
-    "nohoist": [
-      "**/mochawesome",
-      "**/mochawesome/**",
-      "**/mocha",
-      "**/mocha/**",
-      "**/cypress",
-      "**/cypress/**"
-    ]
   }
 }
