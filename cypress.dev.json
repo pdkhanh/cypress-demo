@@ -1,5 +1,4 @@
-{    
-    "projectId": "ypdxzs",
+{
     "host": "veronica.dev",
     "api_server": "http://gobear.com",
     "defaultCommandTimeout": 10000,

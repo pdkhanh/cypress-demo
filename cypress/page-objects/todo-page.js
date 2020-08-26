@@ -1,6 +1,7 @@
 export class GobearPage {
     navigate() {
-        cy.visit("http://gobear.com")
+        // cy.visit("http://gobear.com")
+        cy.visit(Cypress.config('api_server'))
     }
 
     selectSGCountry() {

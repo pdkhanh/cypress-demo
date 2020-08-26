@@ -1,0 +1,6 @@
+{
+    "host": "veronica.staging",
+    "api_server": "http://staging:8888/api/v1/",
+    "defaultCommandTimeout": 10000,
+    "browser": "chrome"
+}
