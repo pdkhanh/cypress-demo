@@ -8,20 +8,19 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 const gobearPage = new GobearPage
 
 describe('Travel Insurance Test', function () {
-    let that;
     before(function () {
         cy.fixture('GoBear').then(function (data) {
             console.log(data)
             this.data = data;
-            that = this;
         })
     })
 
-    it('See over 3 travel insurance cards on result page', () => {
+    it('See over 3 travel insurance cards on result page', (x) =>{
+
         gobearPage.navigate()
         gobearPage.selectSGCountry()
         gobearPage.clickShowMyResult()
-        gobearPage.checkOnRadio(that.data.tripType)
+        gobearPage.checkOnRadio(this.data.tripType)
         gobearPage.ensureNumberOfCardAbove(3)
     })
 })
