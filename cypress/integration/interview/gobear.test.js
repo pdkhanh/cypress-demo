@@ -12,13 +12,16 @@ describe('Travel Insurance Test', function () {
         cy.fixture('GoBear').then(function (data) {
             console.log(data)
             this.data = data;
+            window.this=this
         })
     })
-    it('See over 3 travel insurance cards on result page', function() {
+    let that = window.this;
+    it('See over 3 travel insurance cards on result page', (x) =>{
+        
         gobearPage.navigate()
         gobearPage.selectSGCountry()
         gobearPage.clickShowMyResult()
-        gobearPage.checkOnRadio(this.data.tripType)
+        gobearPage.checkOnRadio(that.data.tripType)
         gobearPage.ensureNumberOfCardAbove(3)
     })
 })
