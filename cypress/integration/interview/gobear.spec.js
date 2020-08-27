@@ -6,8 +6,9 @@ Cypress.on('uncaught:exception', (err, runnable) => {
     return false
 })
 
-it('should open gobear website',()=>{
-    console.log(Cypress.env())
+it('should open gobear website',function() {
+    
+    console.log(Cypress.config())
     const gobearPage = new GobearPage()
     gobearPage.navigate()
     gobearPage.selectSGCountry()
