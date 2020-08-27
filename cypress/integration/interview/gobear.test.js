@@ -15,7 +15,7 @@ describe('Travel Insurance Test', function () {
         })
     })
 
-    it('See over 3 travel insurance cards on result page', (x) =>{
+    it('See over 3 travel insurance cards on result page',function() {
 
         gobearPage.navigate()
         gobearPage.selectSGCountry()
